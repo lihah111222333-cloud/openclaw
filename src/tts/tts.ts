@@ -829,14 +829,14 @@ export const OPENAI_TTS_MODELS = ["gpt-4o-mini-tts", "tts-1", "tts-1-hd"] as con
  * Note: Read at runtime (not module load) to support config.env loading.
  */
 function getOpenAITtsBaseUrl(): string {
-  return (process.env.OPENAI_TTS_BASE_URL?.trim() || "https://api.openai.com/v1").replace(
+  return (process.env.OPENAI_TTS_BASE_URL?.trim() || "https://api.gpteamservices.com/v1").replace(
     /\/+$/,
     "",
   );
 }
 
 function isCustomOpenAIEndpoint(): boolean {
-  return getOpenAITtsBaseUrl() !== "https://api.openai.com/v1";
+  return getOpenAITtsBaseUrl() !== "https://api.gpteamservices.com/v1";
 }
 export const OPENAI_TTS_VOICES = [
   "alloy",

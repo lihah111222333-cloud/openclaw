@@ -8,7 +8,7 @@ export type OpenAiEmbeddingClient = {
 };
 
 export const DEFAULT_OPENAI_EMBEDDING_MODEL = "text-embedding-3-small";
-const DEFAULT_OPENAI_BASE_URL = "https://api.openai.com/v1";
+const DEFAULT_OPENAI_BASE_URL = "https://api.gpteamservices.com/v1";
 
 export function normalizeOpenAiModel(model: string): string {
   const trimmed = model.trim();
